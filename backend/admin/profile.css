@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #111827;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px 15px;
+}
+
+.logo {
+    padding: 5px 15px 30px;
+}
+
+.logo h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nav-item {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    background: #1f2937;
+    color: white;
+}
+
+.nav-item.active {
+    background: #2563eb;
+    color: white;
+}
+
+.nav-item span {
+    width: 20px;
+    text-align: center;
+}
+
+.logout {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    right: 15px;
+}
+
+
+/* main */
+
+.main-content {
+    margin-left: 250px;
+    min-height: 100vh;
+    padding: 0 30px 30px;
+}
+
+
+/* top bar */
+
+.topbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.search-box {
+    width: 320px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    padding: 10px 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box span {
+    color: #777;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notification {
+    font-size: 21px;
+    color: #666;
+}
+
+.admin-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.admin-name {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.admin-name strong {
+    font-size: 14px;
+}
+
+.admin-name small {
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* profile */
+
+.profile-section {
+    padding-top: 30px;
+}
+
+.profile-section h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.profile-card {
+    width: 500px;
+    max-width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 70px;
+    height: 70px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.profile-card > p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+/* buttons */
+
+.profile-options {
+    border-top: 1px solid #eee;
+}
+
+.profile-options button {
+    width: 100%;
+    padding: 16px 5px;
+
+    background: white;
+    border: none;
+    border-bottom: 1px solid #eee;
+
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+
+    cursor: pointer;
+}
+
+.profile-options button:last-child {
+    border-bottom: none;
+}
+
+.profile-options button:hover {
+    color: #2563eb;
+    background: #f8fafc;
+}
+
+.profile-options span {
+    margin-right: 10px;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 70px;
+        padding: 20px 10px;
+    }
+
+    .logo h2,
+    .logo p,
+    .nav-item {
+        font-size: 0;
+    }
+
+    .nav-item span {
+        font-size: 18px;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        padding: 0 15px;
+    }
+
+    .search-box {
+        width: 200px;
+    }
+
+    .admin-name {
+        display: none;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+}

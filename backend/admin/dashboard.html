@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | DeepGuard </title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>DeepGuard </h2>
+            <p>Admin Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item active">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♙</span>
+                Users
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▤</span>
+                Analyses
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♡</span>
+                Feedback
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◷</span>
+                Audit Logs
+            </a>
+
+            <a href="profile.html" class="nav-item">
+    <span>⚙</span>
+    Profile
+</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html" class="nav-item logout">
+                <span>↪</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    placeholder="Search..."
+                >
+
+            </div>
+
+
+            <div class="admin-info">
+
+                <div class="notification">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+        <path d="M10 21h4"></path>
+    </svg>
+            </div>
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div class="admin-details">
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+
+            <div>
+                <h1>Dashboard</h1>
+
+                <p>
+                    Welcome back, Admin. Here's an overview of DeepGuard .
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- STAT CARDS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon users-icon">
+                    ♙
+                </div>
+
+                <div>
+                    <p>Total Users</p>
+                    <h2>—</h2>
+                    <span>Database data pending</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon analysis-icon">
+                    ▤
+                </div>
+
+                <div>
+                    <p>Total Analyses</p>
+                    <h2>—</h2>
+                    <span>Database data pending</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon real-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <p>Real / Authentic</p>
+                    <h2>—</h2>
+                    <span>Database data pending</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon fake-icon">
+                    !
+                </div>
+
+                <div>
+                    <p>Fake / Manipulated</p>
+                    <h2>—</h2>
+                    <span>Database data pending</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHART SECTION -->
+        <section class="charts-grid">
+
+
+            <!-- ANALYSIS TREND -->
+            <div class="dashboard-card trend-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>Analysis Trend</h2>
+                        <p>Analysis activity will appear here.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="trend-placeholder">
+
+                    <div class="chart-line">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <div class="chart-message">
+                        <strong>No analysis data available</strong>
+                        <p>
+                            Connect the backend and database to display analysis trends.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILE TYPE -->
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>File Type Distribution</h2>
+                        <p>Analysis file types</p>
+                    </div>
+
+                </div>
+
+
+                <div class="file-type-content">
+
+                    <div class="donut-chart">
+
+                        <div class="donut-inner">
+                            <strong>—</strong>
+                            <small>Analyses</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="legend">
+
+                        <div class="legend-item">
+                            <span class="legend-dot image-dot"></span>
+                            Image
+                            <strong>—</strong>
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-dot video-dot"></span>
+                            Video
+                            <strong>—</strong>
+                        </div>
+
+                        <div class="legend-item">
+                            <span class="legend-dot audio-dot"></span>
+                            Audio
+                            <strong>—</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT ANALYSIS -->
+        <section class="dashboard-card table-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Recent Analysis Activity</h2>
+                    <p>Latest analysis records</p>
+                </div>
+
+                <button class="view-all-btn">
+                    View All
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>File Name</th>
+                            <th>Type</th>
+                            <th>Result</th>
+                            <th>Confidence</th>
+                            <th>Date</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td colspan="5" class="empty-row">
+                                No analysis data available yet.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- RECENT USERS -->
+        <section class="dashboard-card table-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Recent Users</h2>
+                    <p>Recently registered users</p>
+                </div>
+
+                <button class="view-all-btn">
+                    View All
+                </button>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td colspan="5" class="empty-row">
+                                No user data available yet.
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="dashboard-footer">
+
+            © 2026 DeepGuard AI. All rights reserved.
+
+        </footer>
+
+    </main>
+
+
+    <!-- <script src="dashboard.js"></script> -->
+
+</body>
+
+</html>

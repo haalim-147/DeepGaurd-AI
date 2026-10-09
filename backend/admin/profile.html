@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Profile | DeepGuard </title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <!-- sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>DeepGuard </h2>
+            <p>Admin Panel</p>
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html" class="nav-item">
+                <span>▣</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♙</span>
+                Users
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▤</span>
+                Analyses
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♡</span>
+                Feedback
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◷</span>
+                Audit Logs
+            </a>
+
+            <a href="profile.html" class="nav-item active">
+                <span>⚙</span>
+                Profile
+            </a>
+
+        </nav>
+
+        <div class="logout">
+            <a href="index.html" class="nav-item">
+                <span>↪</span>
+                Logout
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- main content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input type="text" placeholder="Search...">
+
+            </div>
+
+            <div class="admin-info">
+
+                <div class="notification">
+                    ♢
+                </div>
+
+                <div class="admin-avatar">
+                    A
+                </div>
+
+                <div class="admin-name">
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- profile -->
+
+        <section class="profile-section">
+
+            <h1>Profile</h1>
+
+            <div class="profile-card">
+
+                <div class="profile-image">
+                    A
+                </div>
+
+                <h2>Admin</h2>
+
+
+
+                <div class="profile-options">
+
+                    <button onclick="editProfile()">
+                        <span>✎</span>
+                        Edit Profile
+                    </button>
+
+                    <button onclick="changePassword()">
+                        <span>🔒</span>
+                        Change Password
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+            © 2026 DeepGuard AI. All rights reserved.
+        </footer>
+
+    </main>
+
+
+    <script src="profile.js"></script>
+
+</body>
+
+</html>
