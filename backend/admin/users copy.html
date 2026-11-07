@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management | DeepGuard</title>
+    <link rel="stylesheet" href="./users.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>DeepGuard</h2>
+            <p>Admin Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item">
+                <span>▣</span> Dashboard
+            </a>
+            <a href="users.html" class="nav-item active">
+                <span>♙</span> Users
+            </a>
+            <a href="analyses.html" class="nav-item">
+                <span>▤</span> Analyses
+            </a>
+            <a href="#" class="nav-item">
+                <span>♡</span> Feedback
+            </a>
+            <a href="#" class="nav-item">
+                <span>◷</span> Audit Logs
+            </a>
+            <a href="profile.html" class="nav-item">
+                <span>⚙</span> Profile
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html" class="nav-item logout">
+                <span>↪</span> Logout
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <div class="top-search">
+                <span>⌕</span>
+                <input type="search" placeholder="Search users..."
+                       aria-label="Search users">
+            </div>
+
+            <div class="admin-info">
+       
+                <div class="notification">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+        <path d="M10 21h4"></path>
+    </svg>
+            </div>
+
+                <div class="admin-avatar">A</div>
+                <div class="admin-details">
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-header">
+            <div>
+                <h1>User Management</h1>
+                <p>Manage registered users of DeepGuard.</p>
+            </div>
+            <button class="add-user-btn" type="button"
+                    title="Available after backend connection">
+                + Add User
+            </button>
+        </section>
+
+        <section class="filters">
+            <select aria-label="Filter by role">
+                <option value="">All Roles</option>
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+            </select>
+
+            <select aria-label="Filter by status">
+                <option value="">All Status</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <input type="search" placeholder="Search by name or email..."
+                   aria-label="Search by name or email">
+        </section>
+
+        <section class="users-card">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Registered On</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="empty-row">
+                                <div class="empty-icon">♙</div>
+                                <strong>No user data available</strong>
+                                <p>Connect the database to view registered users.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="page-footer">
+            © 2026 DeepGuard. All rights reserved.
+        </footer>
+    </main>
+
+</body>
+</html>

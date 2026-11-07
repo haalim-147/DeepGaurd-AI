@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Records | DeepGuard</title>
+
+    <link rel="stylesheet" href="analyses.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>DeepGuard</h2>
+            <p>Admin Panel</p>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <a href="dashboard.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="users.html" class="nav-item">
+                <i class="fa-solid fa-users"></i>
+                <span>Users</span>
+            </a>
+
+            <a href="analyses.html" class="nav-item active">
+                <i class="fa-solid fa-file-circle-check"></i>
+                <span>Analyses</span>
+            </a>
+
+            <a href="feedback.html" class="nav-item">
+                <i class="fa-solid fa-comments"></i>
+                <span>Feedback</span>
+            </a>
+
+            <a href="audit-logs.html" class="nav-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <span>Audit Logs</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user-gear"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html" class="nav-item logout">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span>Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+    <div class="top-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search...">
+    </div>
+
+    <div class="admin-info">
+        <div class="notification">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                width="22" height="22" viewBox="0 0 24 24"
+                fill="none" stroke="#374151" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
+                <path d="M10 21h4"></path>
+            </svg>
+        </div>
+
+        <div class="admin-avatar">A</div>
+
+        <div class="admin-details">
+            <strong>Admin</strong>
+            <small>Administrator</small>
+        </div>
+    </div>
+</header>
+        <section class="page-header">
+            <h1>Analysis Records</h1>
+            <p>View and manage analysis records.</p>
+        </section>
+
+        <section class="filter-bar">
+
+            <select aria-label="Filter by file type">
+                <option>All File Types</option>
+                <option>Image</option>
+                <option>Video</option>
+                <option>Audio</option>
+            </select>
+
+            <select aria-label="Filter by result">
+                <option>All Results</option>
+                <option>Real</option>
+                <option>Fake</option>
+            </select>
+
+            <input type="date" aria-label="Select date">
+
+            <button type="button" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+
+        </section>
+
+        <section class="records-card">
+
+            <div class="table-wrapper">
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Ref ID</th>
+                            <th>User</th>
+                            <th>File Type</th>
+                            <th>Result</th>
+                            <th>Confidence</th>
+                            <th>Date &amp; Time</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="empty-row">
+                                <div class="empty-icon">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                </div>
+                                <strong>No analysis records available</strong>
+                                <p>Analysis records will appear here when data is available.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </section>
+
+        <footer class="page-footer">
+            © 2026 DeepGuard. All rights reserved.
+        </footer>
+
+    </main>
+
+</body>
+</html>
