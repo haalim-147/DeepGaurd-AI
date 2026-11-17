@@ -1,6 +1,6 @@
-
 from fastapi import FastAPI
 from fastapi import Depends
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
 from backend.database import get_db
@@ -9,6 +9,18 @@ from backend import models
 from services.image_detector import analyze_image
 
 app = FastAPI(title="DeepGaurd")
+
+# --- CORS SETUP ---
+# Jab tak admin panel (HTML/CSS/JS) backend se alag port/file se khula hai,
+# browser bina CORS ke requests block kar dega. Development ke liye "*"
+# theek hai, lekin production mein yahan apna asli frontend URL likhna.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def home():
@@ -89,6 +101,7 @@ def recent_users(db: Session = Depends(get_db)):
         }
         for user in users
     ]
+
 @app.get("/admin/dashboard/file-types")
 def file_type_distribution(db: Session = Depends(get_db)):
 
